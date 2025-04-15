@@ -4,13 +4,13 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'Empleos',
   connector: 'mongodb',
-  url: 'mongodb+srv://riascosf23:king1234@cluster0.odxzlkq.mongodb.net/Empleos?retryWrites=true&w=majority&tls=true',
-  host: '', // Dejado vacío porque la URL ya incluye esta info
-  port: 0, // Dejado como 0 porque la URL ya lo maneja
-  user: '', // Dejado vacío (el usuario está en la URL)
-  password: '', // Dejado vacío (la contraseña está en la URL)
-  database: 'Empleos', // Se mantiene pero es redundante (ya está en la URL)
-  useNewUrlParser: true // Cambiado a true (requerido para MongoDB Driver moderno)
+  url: 'mongodb+srv://riascosf23:1234@cluster0.odxzlkq.mongodb.net/Empleos?retryWrites=true&w=majority&appName=Cluster0',
+  host: '',
+  port: 0,
+  user: '',
+  password: '',
+  database: 'Empleos',
+  useNewUrlParser: true
 };
 
 // Observe application's life cycle to disconnect the datasource when
